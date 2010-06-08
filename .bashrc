@@ -4,7 +4,7 @@ SCRIPTS_DIR="${HOME}/.scripts"
 
 export PATH="${SCRIPTS_DIR}:${PATH}"
 
-if [ -d ~/.bash_prompt ]; then
+if [ -f ~/.bash_prompt ]; then
     . ~/.bash_prompt
 fi
 
