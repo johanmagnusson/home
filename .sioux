@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# home brewed scripts
+export SCRIPT_PATH="${HOME}/Applications/scripts"
+
+# apache ant
+export ANT_HOME="${HOME}/Libraries/ant"
+export ANT_LIB="${ANT_HOME}/lib"
+export ANT_OPTS="-XX:MaxPermSize=128m"
+
+# maven
+export MAVEN_HOME="${HOME}/Libraries/maven"
+
+# mysql
+export MYSQL_HOME="${HOME}/Applications/mysql"
+
+# java
+export JAVA_HOME="/usr/lib/jvm/java-6-sun/jre"
+
+export PATH="${MYSQL_HOME}/bin:${ANT_HOME}/bin:${MAVEN_HOME}/bin:${SCRIPT_PATH}:${PATH}"
