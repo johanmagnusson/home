@@ -1,5 +1,11 @@
 ;; emacs, please
 
+;; ELPA -- http://tromey.com/elpa/
+(when
+    (load
+     (expand-file-name "~/.emacs.d/elpa/package.el"))
+  (package-initialize))
+
 ;; fix []{} etc...
 (setq mac-option-modifier 'none)
 
@@ -27,7 +33,8 @@
 (setq auto-save nil)
 (setq delete-auto-save-files t)
 
-;; keep private installation of color-theme...
+;; keep private installation of color-theme... 
+;; http://www.nongnu.org/color-theme/
 (add-to-list 'load-path "~/.emacs.d/packages/color-theme-6.6.0")
 (require 'color-theme)
 
@@ -55,9 +62,3 @@
 
 ;; editing, require final newline
 (setq require-final-newline t)
-
-;; ELPA -- http://tromey.com/elpa/
-(when
-    (load
-     (expand-file-name "~/.emacs.d/elpa/package.el"))
-  (package-initialize))

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# environment variables etc.
+
+SCRIPTS_DIR="${HOME}/.scripts"
+
+export PATH="${SCRIPTS_DIR}:${PATH}"
+
+# mysql prompt
+export MYSQL_PS1="\u@\h:\p : mysql/\d\n>\_"

@@ -1,13 +1,19 @@
 #!/bin/bash
 
-SCRIPTS_DIR="${HOME}/.scripts"
+if [ -f ~/.environment ]; then
+    . ~/.environment
+fi
 
-export PATH="${SCRIPTS_DIR}:${PATH}"
-
-if [ -d ~/.bash_prompt ]; then
+if [ -f ~/.bash_prompt ]; then
     . ~/.bash_prompt
 fi
 
 if [ -f ~/.bash_alias ]; then
     . ~/.bash_alias
+fi
+
+# load host specifics
+HOST_ENV="${HOME}/.${HOSTNAME}"
+if [ -f ${HOST_ENV} ]; then
+    . ${HOST_ENV}
 fi
