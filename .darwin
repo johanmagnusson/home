@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Max OS X (Darwin) specific settings
+
+alias ls='ls -G'
