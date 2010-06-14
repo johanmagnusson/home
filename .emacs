@@ -3,6 +3,9 @@
 ;; fix []{} etc...
 (setq mac-option-modifier 'none)
 
+;; cmd should act as meta, not as super
+(setq mac-command-modifier 'meta)
+
 ;; Deva-Vu Sans Mono
 (custom-set-faces
  '(default ((t (:inherit nil :stipple nil :background "white" :foreground "black"
