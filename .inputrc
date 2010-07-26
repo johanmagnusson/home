@@ -1,0 +1,6 @@
+# do not bell on tab-completion
+set bell-style none
+set bell-style visible
+
+# ignore case for auto completion
+set completion-ignore-case on
