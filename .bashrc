@@ -24,3 +24,19 @@ fi
 if [ -f ~/.bash_alias ]; then
     . ~/.bash_alias
 fi
+
+# bash specifics
+
+# don't put duplicate lines in the history
+HISTCONTROL=ignoredups:ignorespace
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# size of history
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
