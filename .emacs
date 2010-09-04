@@ -102,6 +102,9 @@
 ;; editing, require final newline
 (setq require-final-newline t)
 
+;; indent using spaces, i think it's for the best (for now)
+(setq indent-tabs-mode nil)
+
 ;; move between windows
 (defun select-next-window ()
   "Switch to the next window" 
