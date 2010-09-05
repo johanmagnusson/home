@@ -105,6 +105,9 @@
 ;; indent using spaces, i think it's for the best (for now)
 (setq indent-tabs-mode nil)
 
+;; show bash colors when running a shell inside emacs
+(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+
 ;; move between windows
 (defun select-next-window ()
   "Switch to the next window" 
