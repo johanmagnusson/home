@@ -3,8 +3,9 @@
 # environment variables etc.
 
 SCRIPTS_DIR="${HOME}/.scripts"
+BIN_DIR="${HOME}/Applications/bin"
 
-export PATH="${SCRIPTS_DIR}:${PATH}"
+export PATH="${SCRIPTS_DIR}:${BIN_DIR}:${PATH}"
 
 # mysql prompt
 export MYSQL_PS1="\u@\h:\p : mysql/\d\n>\_"
