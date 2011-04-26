@@ -3,3 +3,7 @@
 	email = johan.b.magnusson@gmail.com
 [core]
 	editor = emacs
+[color]
+	diff = auto
+	branch = auto
+	status = auto
