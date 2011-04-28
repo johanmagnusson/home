@@ -6,7 +6,7 @@ export SCRIPT_PATH="${HOME}/Applications/scripts"
 # apache ant
 export ANT_HOME="${HOME}/Libraries/ant"
 export ANT_LIB="${ANT_HOME}/lib"
-export ANT_OPTS="-XX:MaxPermSize=128m"
+export ANT_OPTS="-XX:MaxPermSize=256m"
 
 # maven
 export MAVEN_HOME="${HOME}/Libraries/maven"
