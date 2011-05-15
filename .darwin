@@ -3,3 +3,6 @@
 # Max OS X (Darwin) specific settings
 
 alias ls='ls -G'
+
+# Location of node.js as installed by homebrew
+export NODE_PATH=/usr/local/lib/node_modules
