@@ -12,3 +12,6 @@ export MYSQL_PS1="\u@\h:\p : mysql/\d\n>\_"
 
 # always prefer local installation of node modules before global one
 export NODE_PATH=./node_modules:${NODE_PATH}
+
+# set width for reading manpages, important for wide screens
+export MANWIDTH=80
