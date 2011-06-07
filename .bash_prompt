@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # make a list of colors as variables
 c_start="\[\033["
 c_end="m\]"
