@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# prompt color
+COLOR_PROMPT=$COLOR_RED
+
 # home brewed scripts
 export SCRIPT_PATH="${HOME}/Applications/scripts"
 
