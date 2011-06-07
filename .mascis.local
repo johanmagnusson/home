@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# prompt color, please
+COLOR_PROMPT=$COLOR_DARK_GRAY
