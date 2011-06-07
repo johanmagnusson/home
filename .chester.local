@@ -1,0 +1,3 @@
+#!/bin/bash
+
+COLOR_PROMPT=$COLOR_LIGHT_GRAY
