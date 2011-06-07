@@ -1,5 +1,13 @@
 #!/bin/bash
 
+COLOR_CONF="${HOME}/.colors"
+if [ -f ${COLOR_CONF} ]; then
+    . ${COLOR_CONF}
+fi
+
+# set the default prompt color
+COLOR_PROMPT=$COLOR_DEFAULT
+
 # load host specifics
 HOST_CONF="${HOME}/.${HOSTNAME}"
 if [ -f ${HOST_CONF} ]; then

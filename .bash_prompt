@@ -1,34 +1,11 @@
 #!/bin/bash
 
-# make a list of colors as variables
-c_start="\[\033["
-c_end="m\]"
-color_black="${c_start}0;30${c_end}"
-color_blue="${c_start}0;34${c_end}"
-color_green="${c_start}0;32${c_end}"
-color_cyan="${c_start}0;36${c_end}"
-color_red="${c_start}0;31${c_end}"
-color_purple="${c_start}0;35${c_end}"
-color_brown="${c_start}0;33${c_end}"
-color_light_gray="${c_start}0;37${c_end}"
-color_dark_gray="${c_start}1;30${c_end}"
-color_light_blue="${c_start}1;34${c_end}"
-color_light_green="${c_start}1;32${c_end}"
-color_light_cyan="${c_start}1;36${c_end}"
-color_light_red="${c_start}1;31${c_end}"
-color_light_purple="${c_start}1;35${c_end}"
-color_yellow="${c_start}1;33${c_end}"
-color_white="${c_start}1;37${c_end}"
-color_default="${c_start}0${c_end}"
-
-color_host=$color_yellow
-
-user_ps1="${color_default}\u${color_light_gray}@${color_host}\h${color_default} : ${color_light_gray}\w${color_default}\n\\$ "
-root_ps1="${color_default}\u${color_light_gray}@${color_host}\h${color_default} : ${color_light_gray}\w${color_light_red}\n\\$ ${color_default}"
-nocolor_ps1="\u@\h : \w \n\$ "
+USER_PS1="${COLOR_DEFAULT}\u${COLOR_LIGHT_GRAY}@${COLOR_PROMPT}\h${COLOR_DEFAULT} : ${COLOR_LIGHT_GRAY}\w${COLOR_DEFAULT}\n\\$ "
+ROOT_PS1="${COLOR_DEFAULT}\u${COLOR_LIGHT_GRAY}@${COLOR_PROMPT}\h${COLOR_DEFAULT} : ${COLOR_LIGHT_GRAY}\w${COLOR_LIGHT_RED}\n\\$ ${COLOR_DEFAULT}"
+NOCOLOR_PS1="\u@\h : \w \n\$ "
 
 if [[ ${EUID} == 0 ]] ; then
-    PS1=$root_ps1
+    PS1=$ROOT_PS1
 else
-    PS1=$user_ps1
+    PS1=$USER_PS1
 fi
