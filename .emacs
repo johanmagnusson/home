@@ -66,6 +66,13 @@
 (add-hook 'coffee-mode-hook
           '(lambda() (coffee-custom)))
 
+;; major modes for jade and stylus
+(add-to-list 'load-path "~/.emacs.d/packages/jade-mode")
+(require 'sws-mode)
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+
 ;; scrolling behavior
 (setq scroll-margin 5)
 (setq scroll-conservatively 5)
