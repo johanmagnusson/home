@@ -52,6 +52,20 @@
      (load-file "~/.emacs.d/color-themes/solarized/color-theme-solarized.el")
      (color-theme-charcoal-black)))
 
+;; major mode for coffee-script
+(add-to-list 'load-path "~/.emacs.d/packages/coffee-mode")
+
+(require 'coffee-mode)
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+(add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
+
+(defun coffee-custom ()
+  "coffee-mode-hook"
+  (set (make-local-variable 'tab-width) 2))
+
+(add-hook 'coffee-mode-hook
+          '(lambda() (coffee-custom)))
+
 ;; scrolling behavior
 (setq scroll-margin 5)
 (setq scroll-conservatively 5)
