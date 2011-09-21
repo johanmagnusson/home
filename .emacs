@@ -33,6 +33,12 @@
 (setq auto-save nil)
 (setq delete-auto-save-files t)
 
+;; do not store auto save files in current dir
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
 ;; keep private installation of color-theme... 
 ;; http://www.nongnu.org/color-theme/
 (add-to-list 'load-path "~/.emacs.d/packages/color-theme-6.6.0")
