@@ -58,7 +58,9 @@
  ;; kill newline as well when killing
  '(kill-whole-line t)
  ;; show column numbers
- '(column-number-mode t))
+ '(column-number-mode t)
+ ;; indent with spaces, not tabs
+ '(indent-tabs-mode nil))
 
 ;; editing, require final newline
 (setq require-final-newline t)
