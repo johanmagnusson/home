@@ -49,6 +49,7 @@
      (color-theme-initialize)
      ;; TOOD: auto-download of this theme, or something: http://github.com/crafterm/twilight-emacs
      (load-file "~/.emacs.d/color-themes/twilight-emacs/color-theme-twilight.el")
+     (load-file "~/.emacs.d/color-themes/solarized/color-theme-solarized.el")
      (color-theme-charcoal-black)))
 
 ;; scrolling behavior
