@@ -44,24 +44,12 @@
 ;; keep private installation of color-theme... 
 ;; http://www.nongnu.org/color-theme/
 (add-to-list 'load-path "~/.emacs.d/packages/color-theme-6.6.0")
-(add-to-list 'load-path "~/.emacs.d/color-themes/emacs-color-theme-solarized")
 (require 'color-theme)
 
 (eval-after-load "color-theme"
   '(progn
      (color-theme-initialize)
-     ;; TOOD: auto-download of this theme, or something: http://github.com/crafterm/twilight-emacs
-     (load-file "~/.emacs.d/color-themes/twilight-emacs/color-theme-twilight.el")
-     (require 'color-theme-solarized)
      (color-theme-charcoal-black)))
-
-
-;; major mode for coffee-script
-(add-to-list 'load-path "~/.emacs.d/packages/coffee-mode")
-
-(require 'coffee-mode)
-(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
-(add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
 
 (defun coffee-custom ()
   "coffee-mode-hook"
