@@ -4,7 +4,9 @@
 (when
     (load
      (expand-file-name "~/.emacs.d/elpa/package.el"))
-  (package-initialize))
+  (package-initialize)
+  ;; init marmalade repo
+  (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/")))
 
 ;; fix []{} etc...
 (setq mac-option-modifier 'none)
@@ -74,6 +76,19 @@
 (require 'jade-mode)
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+
+;; apache-mode, for editing apache configuration files
+(add-to-list 'load-path "~/.emacs.d/packages/apache-mode")
+(require 'apache-mode)
+(add-to-list 'auto-mode-alist '("\\.htaccess\\'"   . apache-mode))
+(add-to-list 'auto-mode-alist '("httpd\\.conf\\'"  . apache-mode))
+(add-to-list 'auto-mode-alist '("srm\\.conf\\'"    . apache-mode))
+(add-to-list 'auto-mode-alist '("access\\.conf\\'" . apache-mode))
+(add-to-list 'auto-mode-alist '("sites-\\(available\\|enabled\\)/" . apache-mode))
+
+;; nginx-mode, for editing nginx config files
+(add-to-list 'load-path "~/.emacs.d/packages/nginx-mode")
+(require 'nginx-mode)
 
 ;; scrolling behavior
 (setq scroll-margin 5)
