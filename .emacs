@@ -26,7 +26,7 @@
 (custom-set-variables '(inhibit-startup-screen t))
 
 ;; Clean up interface
-;(tool-bar-mode nil)
+(tool-bar-mode nil)
 ;(menu-bar-mode nil)
 (scroll-bar-mode nil)
 
