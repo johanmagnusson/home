@@ -95,7 +95,9 @@
  ;; indent with spaces, not tabs
  '(indent-tabs-mode nil)
  ;; show annoying trailing whitespace
- '(show-trailing-whitespace t))
+ '(show-trailing-whitespace t)
+ ;; show annoying empty lines
+ '(indicate-empty-lines t))
 
 ;; editing, require final newline
 (setq require-final-newline t)
