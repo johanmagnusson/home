@@ -93,7 +93,9 @@
  ;; show column numbers
  '(column-number-mode t)
  ;; indent with spaces, not tabs
- '(indent-tabs-mode nil))
+ '(indent-tabs-mode nil)
+ ;; show annoying trailing whitespace
+ '(show-trailing-whitespace t))
 
 ;; editing, require final newline
 (setq require-final-newline t)
