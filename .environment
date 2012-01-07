@@ -4,14 +4,15 @@
 
 SCRIPTS_DIR="${HOME}/.scripts"
 BIN_DIR="${HOME}/Applications/bin"
+LOCAL_NODE_PATH="./node_modules"
 
-export PATH="${SCRIPTS_DIR}:${BIN_DIR}:${PATH}"
+export PATH="${SCRIPTS_DIR}:${BIN_DIR}:${LOCAL_NODE_PATH}/.bin:${PATH}"
 
 # mysql prompt
 export MYSQL_PS1="\u@\h:\p : mysql/\d\n>\_"
 
 # always prefer local installation of node modules before global one
-export NODE_PATH=./node_modules:${NODE_PATH}
+export NODE_PATH=${LOCAL_NODE_PATH}:${NODE_PATH}
 
 # set width for reading manpages, important for wide screens
 export MANWIDTH=80
