@@ -18,7 +18,7 @@ export MAVEN_HOME="${HOME}/Libraries/maven"
 export MYSQL_HOME="${HOME}/Applications/mysql"
 
 # java
-export JDK_HOME="/usr/lib/jvm/java-6-sun"
+export JDK_HOME="${HOME}/Libraries/java"
 export JAVA_HOME="${JDK_HOME}/jre"
 
-export PATH="${MYSQL_HOME}/bin:${ANT_HOME}/bin:${MAVEN_HOME}/bin:${SCRIPT_PATH}:${PATH}"
+export PATH="${JAVA_HOME}/bin:${MYSQL_HOME}/bin:${ANT_HOME}/bin:${MAVEN_HOME}/bin:${SCRIPT_PATH}:${PATH}"
