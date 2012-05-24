@@ -14,6 +14,9 @@ export ANT_OPTS="-XX:MaxPermSize=256m"
 # maven
 export MAVEN_HOME="${HOME}/Libraries/maven"
 
+# gradle
+export GRADLE_HOME="${HOME}/Libraries/gradle"
+
 # mysql
 export MYSQL_HOME="${HOME}/Applications/mysql"
 
@@ -21,4 +24,4 @@ export MYSQL_HOME="${HOME}/Applications/mysql"
 export JDK_HOME="${HOME}/Libraries/java"
 export JAVA_HOME="${JDK_HOME}/jre"
 
-export PATH="${JAVA_HOME}/bin:${MYSQL_HOME}/bin:${ANT_HOME}/bin:${MAVEN_HOME}/bin:${SCRIPT_PATH}:${PATH}"
+export PATH="${JAVA_HOME}/bin:${GRADLE_HOME}/bin:${MYSQL_HOME}/bin:${ANT_HOME}/bin:${MAVEN_HOME}/bin:${SCRIPT_PATH}:${PATH}"
