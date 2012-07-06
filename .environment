@@ -6,7 +6,7 @@ SCRIPTS_DIR="${HOME}/.scripts"
 BIN_DIR="${HOME}/Applications/bin"
 LOCAL_NODE_PATH="./node_modules"
 
-export PATH="${SCRIPTS_DIR}:${BIN_DIR}:${LOCAL_NODE_PATH}/.bin:${PATH}"
+export PATH="${SCRIPTS_DIR}:${BIN_DIR}:${PATH}"
 
 # mysql prompt
 export MYSQL_PS1="\u@\h:\p : mysql/\d\n>\_"
