@@ -9,7 +9,7 @@ fi
 COLOR_PROMPT=$COLOR_DEFAULT
 
 # load host specifics
-HOST_CONF="${HOME}/.${HOSTNAME}"
+HOST_CONF="${HOME}/.$(hostname -s)"
 if [ -f ${HOST_CONF} ]; then
     . ${HOST_CONF}
 fi
