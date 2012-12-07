@@ -14,6 +14,11 @@ if [ -f ${HOST_CONF} ]; then
     . ${HOST_CONF}
 fi
 
+# load completion
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
+fi
+
 # load os specifics
 OS_ID=`uname | tr A-Z a-z` # translate uppercase to lowercase
 OS_CONF="${HOME}/.${OS_ID}"
