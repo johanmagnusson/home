@@ -6,3 +6,13 @@ alias ls='ls -G'
 
 # Location of node.js as installed by homebrew
 export NODE_PATH=/usr/local/lib/node_modules
+
+# OS X specific way of setting java version
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+
+# Homebrew, to avoid rate limiting
+export HOMEBREW_GITHUB_API_TOKEN=21570115991a3c41bb064ff3dbb62f13f8772ff0
+
+# Support for NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
