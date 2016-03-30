@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+COLOR_PROMPT=${COLOR_RED}
+
+# Homebrew
+PATH="/usr/local/bin:${PATH}"
+
+# Ant
+export ANT_OPTS="-Dfile.encoding=UTF-8 -Xms512m -Xmx1024m"
+
+# Maven
+export MAVEN_OPTS="-Xmx1g -XX:MaxPermSize=1g -Dfile.encoding=utf8"
+export MAVEN_HOME="/usr/local/Cellar/maven2/2.2.1"
+
+# Alias etc för escenic
+eval "$(/Users/johan/Workspaces/escenic/manage/environment)"
+
+# Ruby env
+eval "$(rbenv init -)"
