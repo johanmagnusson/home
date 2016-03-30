@@ -7,3 +7,5 @@
 	diff = auto
 	branch = auto
 	status = auto
+[rebase]
+	stat = true
