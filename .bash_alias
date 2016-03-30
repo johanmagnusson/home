@@ -17,3 +17,6 @@ alias xv='xview'
 
 alias psgrep="ps uax | grep"
 
+alias gw='./gradlew'
+
+alias moln="ssh -t cli@sthlm.molnet.svt.se --"
