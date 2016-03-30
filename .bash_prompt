@@ -1,5 +1,10 @@
 #!/bin/bash
 
+GIT_PROMPT="/usr/local/git/contrib/completion/git-prompt.sh"
+if [ -f ${GIT_PROMPT} ]; then
+    . ${GIT_PROMPT}
+fi
+
 # Check if git enabled PS1 is sourced
 if type __git_ps1 | grep -q 'function$' 2>/dev/null; then
     GIT_PS1="\$(__git_ps1 '(%s) ')"
