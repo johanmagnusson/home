@@ -1,6 +1,6 @@
 [user]
 	name = Johan Magnusson
-	email = johan.b.magnusson@gmail.com
+	useConfigOnly = true
 [core]
 	editor = nano
 [color]
