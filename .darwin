@@ -8,7 +8,7 @@ alias ls='ls -G'
 export NODE_PATH=/usr/local/lib/node_modules
 
 # OS X specific way of setting java version
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 # Homebrew, to avoid rate limiting
 export HOMEBREW_GITHUB_API_TOKEN=21570115991a3c41bb064ff3dbb62f13f8772ff0
