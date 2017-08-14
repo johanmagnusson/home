@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# prompt color
+COLOR_PROMPT=$COLOR_YELLOW
