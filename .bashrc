@@ -38,6 +38,11 @@ if [ -f ~/.bash_alias ]; then
     . ~/.bash_alias
 fi
 
+# Specific env per host, not to be checked in
+if [ -f ~/.bash_local_env ]; then
+    . ~/.bash_local_env
+fi
+
 # bash specifics
 
 # don't put duplicate lines in the history
