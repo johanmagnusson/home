@@ -9,7 +9,7 @@ alias set-java-9='export JAVA_HOME=$(/usr/libexec/java_home -v 9)'
 alias set-java-10='export JAVA_HOME=$(/usr/libexec/java_home -v 10)'
 
 # OS X specific way of setting java version
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export JAVA_HOME=$(/usr/libexec/java_home -v 10)
 
 # NVM config according to homebrew
 export NVM_DIR="$HOME/.nvm"
