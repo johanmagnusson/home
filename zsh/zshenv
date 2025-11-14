@@ -2,4 +2,4 @@ source "$HOME/.cargo/env"
 source "$HOME/.deno/env"
 
 export MANWIDTH=80
-export LSCOLORS='Axxxxxxxxxxxxxxxxxxx'
+export LSCOLORS='Axhxxxxxxxxxxxxxxxxx'
