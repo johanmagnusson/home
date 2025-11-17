@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# linux specific settings
-
-alias ls='ls --color=auto'
