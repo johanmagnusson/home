@@ -1,0 +1,8 @@
+-- Enable expanded display for better readability of wide output
+\x auto
+
+-- Always display query time
+\timing on
+
+-- Show null as `(null)` over ``
+\pset null '(null)'
