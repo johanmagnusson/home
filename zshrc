@@ -1,5 +1,5 @@
 # Identify where this file is located
-ZCONFIG="$HOME/.config/home/zsh"
+ZCONFIG="$HOME/.dotfiles/zsh"
 
 # Core components
 source "$ZCONFIG/aliases.zsh"
