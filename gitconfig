@@ -4,7 +4,7 @@
 	wdiff = diff --color-word
 [user]
 	name = Johan Magnusson
-	email = johan.magnusson@mentimeter.com
+	useConfigOnly = true
 [branch]
 	autoSetupMerge = always
 	whitespace = trailing-space
