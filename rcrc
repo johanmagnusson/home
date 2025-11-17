@@ -1,1 +1,1 @@
-EXCLUDES="nano zsh README"
+EXCLUDES="zsh README"
