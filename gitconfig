@@ -1,0 +1,32 @@
+[alias]
+	d = diff
+	ds = diff --staged
+	wdiff = diff --color-word
+[user]
+	name = Johan Magnusson
+	email = johan.magnusson@mentimeter.com
+[branch]
+	autoSetupMerge = always
+	whitespace = trailing-space
+[core]
+	editor = nano
+[rebase]
+	stat = true
+[pager]
+	branch = false
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	renames = true
+	mnemonicPrefix = true
+[push]
+	autoSetupRemote = true
+	default = simple
+[commit]
+	verbose = true
